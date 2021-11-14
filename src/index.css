@@ -13,35 +13,40 @@ code {
 }
 
 #Navbar{
-  margin-top: 5vh;
-  padding: 0 5vw;
+  margin-top: 7vh;
+  padding: 0 4vw 0 5vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 #nav-heading{
-  font-size: 1.8rem;
-  font-weight: 630;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: rgb(38, 123, 233);
 }
 .nav-links{
   display: flex;
   flex-direction: row;
   width: 30vw;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
   flex-wrap: wrap;
 }
 .nav-links a{
+  margin: 0 10px;
+  color: rgb(99, 99, 99);
   text-decoration: none;
-  font-size: 1.2rem;
-  color: black;
-  padding-bottom: 0.7rem;
+  font-size: 0.8rem;
+  transition: 0.1s ease-in;
 }
-.nav-list-high{
+.nav-links a:hover{
+  color: black;
+  border-bottom: solid 4px rgb(153, 153, 153);
+}
+#nav-list-high{
+  color: black;
   font-weight: 700;
   border-bottom: solid 4px rgb(153, 153, 153);
 }
-
 
