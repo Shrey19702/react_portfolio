@@ -1,11 +1,11 @@
 import Navbar from './Navbar'
-import Headpage from './Main'
+import HeroPage from './Hero'
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Headpage/>
+      <HeroPage/>
     </div>
   );
 }
