@@ -1,6 +1,9 @@
 const HeroPage = () => {
+    
     return (  
-        <h2>hello</h2>
+        <div className="hero-page">
+
+        </div>
     );
 }
  

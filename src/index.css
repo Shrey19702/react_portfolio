@@ -53,3 +53,10 @@ code {
   border-bottom: solid 4px rgb(153, 153, 153);
   transition: 0.1s ease-in;
 }
+
+
+.hero-page{
+  height: 90vh;
+  width: 100%;
+  background-color: aqua;
+}
