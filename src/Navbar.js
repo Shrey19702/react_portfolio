@@ -26,7 +26,7 @@ const Navbar = () => {
 
     return ( 
         <nav className="Navbar">
-            <div id="nav-heading">Shrey Gupta</div>
+            <div id="nav-heading"><a href="/">Shrey Gupta</a></div>
 
             <div className="nav-links">
                 {

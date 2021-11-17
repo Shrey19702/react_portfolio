@@ -1,4 +1,5 @@
 body {
+  z-index: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -13,16 +14,20 @@ code {
 }
 
 .Navbar{
-  padding: 8vh 1vw 0 5vw;
+  padding: 0 1vw 0 5vw;
+  height: 21vh;
+  width: 92vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-#nav-heading{
-  font-size: 2rem;
+#nav-heading a{
+  font-size: 32px;
   font-weight: 600;
   color: #2965ff;
+  font-family: 'Space Grotesk Web',sans-serif;
+  text-decoration: none;
 }
 .nav-links{
   display: flex;
@@ -56,13 +61,41 @@ code {
 
 
 .hero-page{
-  height: 90vh;
+  height: 79vh;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.hero-content{
+  position: fixed;
+  z-index: 1;
+  margin-bottom: 10vh;
+  width: 80vw;
+  padding: 0 5vw;
+}
+.hero-title{
+  font-size: 5rem;
+  margin-bottom: 0;
+  /* padding: 0 5vw; */
+  font-weight: 700;
+  text-indent: 15px;
+}
+.hero-intro{
+  width: 30vw;
+  margin-top: 2px;
+  padding: 0 1.5vw;
+  font-family: 'Neue Haas Grotesk Web',sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
 }
 
 .projects-page{
+  position: relative;
+  z-index: 10000;
   height: 100vh;
   width: 100%;
-  background-color: blueviolet;
+  background-color: rgb(112, 218, 14);
 }

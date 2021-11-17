@@ -5,8 +5,10 @@ import Projects from './Projects'
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <HeroPage/>
+      <div className="main-page">
+        <Navbar/>
+        <HeroPage/>
+      </div>
       <Projects/>
     </div>
   );
