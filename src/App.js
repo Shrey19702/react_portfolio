@@ -1,6 +1,7 @@
 import Navbar from './Navbar'
 import HeroPage from './Hero'
 import Projects from './Projects'
+import Footer from './Footer'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <HeroPage/>
       </div>
       <Projects/>
+      <Footer/>
     </div>
   );
 }

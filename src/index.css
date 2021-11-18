@@ -59,6 +59,11 @@ code {
   transition: 0.1s ease-in;
 }
 
+.main-page{
+  background-image: url(./images/website\ landing.png);
+  background-position: 0 0;
+  background-size: cover;
+}
 
 .hero-page{
   height: 79vh;
@@ -78,7 +83,6 @@ code {
 .hero-title{
   font-size: 5rem;
   margin-bottom: 0;
-  /* padding: 0 5vw; */
   font-weight: 700;
   text-indent: 15px;
 }
@@ -94,14 +98,39 @@ code {
 
 .projects-page{
   position: relative;
-  z-index: 10000;
+  z-index: 2;
   height: 100vh;
   width: 100%;
   background-color: rgb(112, 218, 14);
 }
 
-.main-page{
-  background-image: url(./images/website\ landing.png);
-  background-position: 0 0;
-  background-size: cover;
+.Footer{
+  position: relative;
+  z-index: 2;
+
+  width: 90%;
+  height: 48vh;
+  margin: 0;
+  padding: 0 5%;
+  background-color: #fafafa;
 }
+
+.footer-title{
+  margin: 0;
+  padding: 12vh 0 8vh;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: 'Space Grotesk Web',sans-serif;
+}
+.footer-links{
+  display: flex;
+  flex-direction: row;
+}
+.footer-link{
+  color: grey;
+  margin: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 3px solid rgb(216, 216, 216);
+}
+
