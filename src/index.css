@@ -65,7 +65,15 @@ code {
   background-size: cover;
 }
 
-.hero-page{
+.hero-page-home{
+  height: 79vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.hero-page-contact{
   height: 79vh;
   width: 100%;
   display: flex;

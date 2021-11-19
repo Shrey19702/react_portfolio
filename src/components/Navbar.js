@@ -2,8 +2,6 @@ import {useState, useEffect } from "react";
 import {Link} from 'react-router-dom';
 
 const Navbar = () => {
-    // const [name, setname] = useState('hello');
-
     const [links, Setlinks] = useState([
         {   id: 1, content: 'home', ref: '/', type: 'norm'},
         {   id: 2, content: 'about', ref: '/about', type: 'norm'},
@@ -11,13 +9,12 @@ const Navbar = () => {
     ]);
 
     useEffect(
-        ()=>{
-            handleClick();
-    },[]);
+        ()=>handleClick(),
+        []
+    );
 
     const handleClick = function(){
         const url = window.location.href;
-
         var copy_links = links.filter(
             (link)=>{
                 if(url.endsWith(link.ref)){
@@ -35,9 +32,6 @@ const Navbar = () => {
     return ( 
         <nav className="Navbar">
             <div id={"nav-heading"}><a href="/">Shrey Gupta</a></div>
-
-            {/* <button onClick={handleClick}>{name}</button> */}
-
             <div className="nav-links" onClick={handleClick}>
                 {
                     links.map(link => (
@@ -50,5 +44,4 @@ const Navbar = () => {
         </nav>
     );
 }
- 
 export default Navbar;
