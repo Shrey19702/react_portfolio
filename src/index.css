@@ -1,9 +1,10 @@
 body {
   z-index: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Poppins','Roboto','Space Grotesk',sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26,7 +27,6 @@ code {
   font-size: 32px;
   font-weight: 600;
   color: #2965ff;
-  font-family: 'Space Grotesk Web',sans-serif;
   text-decoration: none;
 }
 .nav-links{
@@ -59,7 +59,7 @@ code {
   transition: 0.1s ease-in;
 }
 
-.main-page{
+.main-page-home{
   background-image: url(./images/website\ landing.png);
   background-position: 0 0;
   background-size: cover;
@@ -74,7 +74,15 @@ code {
   align-items: flex-start;
 }
 .hero-page-contact{
-  height: 79vh;
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.hero-page-about{
+  height: 40vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -86,7 +94,7 @@ code {
   z-index: 1;
   margin-bottom: 10vh;
   width: 80vw;
-  padding: 0 5vw;
+  padding: 0 4vw;
 }
 .hero-title{
   font-size: 5rem;
@@ -98,7 +106,6 @@ code {
   width: 30vw;
   margin-top: 2px;
   padding: 0 1.5vw;
-  font-family: 'Neue Haas Grotesk Web',sans-serif;
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.6rem;

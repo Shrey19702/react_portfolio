@@ -8,7 +8,7 @@ const Contact = () => {
 
     return (
         <Fragment>
-            <div className="main-page">
+            <div className="main-page-contact">
                 <Navbar/>
                 <HeroPage heroTitle={heroTitle} heroClass={heroClass}/>
             </div>

@@ -10,7 +10,7 @@ const Home = () => {
     
     return ( 
         <Fragment>
-            <div className="main-page">
+            <div className="main-page-home">
                 <Navbar/>
                 <HeroPage heroTitle={heroTitle} heroClass={heroClass} heroIntro={heroIntro}/>
             </div>
