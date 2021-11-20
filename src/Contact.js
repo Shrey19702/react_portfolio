@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Navbar from './components/Navbar';
 import HeroPage from './components/Hero';
+import ContactForm from "./components/ContactForm";
 
 const Contact = () => {
     const heroTitle = "Let's Chat.";
@@ -12,6 +13,7 @@ const Contact = () => {
                 <Navbar/>
                 <HeroPage heroTitle={heroTitle} heroClass={heroClass}/>
             </div>
+            <ContactForm/>
         </Fragment>
      );
 }
