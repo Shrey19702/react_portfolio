@@ -209,7 +209,7 @@ code {
   font-size: 2.5rem;
   line-height: 1.6rem;
 
-  margin: 3rem 0;
+  margin: 5rem 0 2.5rem;
 }
 .who-am-i p{
   font-weight: 100;
@@ -248,3 +248,10 @@ code {
   border-bottom: 3px solid rgb(216, 216, 216);
 }
 
+.footer-link:hover{
+  color: black;
+  margin: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 3px solid rgb(29, 29, 29);
+}
