@@ -1,13 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const ContactForm = () => {
     const [name, setname] = useState('')
     const [email, setemail] = useState('')
     const [message, setmessage] = useState('')    
 
+    useEffect(()=>{
+        Aos.init({duration: 1000});
+    });
+
     return (  
         <div className="contact-form-box">
-            <h1 className="contact-form-heading" >Get in touch.</h1>
+            <h1 data-aos="fade-right" className="contact-form-heading" >Get in touch.</h1>
             <form className="contact-form">
                 <input
                     className="form-input"

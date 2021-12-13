@@ -1,7 +1,15 @@
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 const Footer = () => {
+    useEffect(()=>{
+        Aos.init({duration: 1000});
+    });
+    
     return (
         <div className="Footer">
-            <h1 className="footer-title">
+            <h1 data-aos="fade-up" className="footer-title">
                 Shrey Gupta
             </h1>
             <div className="footer-links">
